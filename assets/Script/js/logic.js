@@ -79,7 +79,7 @@ console.log("Your correct answers = "+playerCorrectAnswer);
 
 function correctAnswer() {
   console.log("That is correct!!");
-  let correctsound = new Audio("/assets/sfx/correct.wav");
+  let correctsound = new Audio("./assets/sfx/correct.wav");
   correctsound.play();
   playerCorrectAnswer++;
 }
@@ -89,7 +89,7 @@ function wrongAnswer(params) {
   gameTime=gameTime-3;
 
   console.log("That is wrong!");
-  let wrongSound = new Audio("/assets/sfx/incorrect.wav");
+  let wrongSound = new Audio("./assets/sfx/incorrect.wav");
   wrongSound.play();
 }
 
