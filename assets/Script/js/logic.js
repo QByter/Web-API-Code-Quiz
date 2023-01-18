@@ -5,6 +5,7 @@ let answerChoices = document.querySelector("#choices-list");
 let timeRemaining = document.querySelector("#time");
 let signUpButton = document.querySelector("#submit");
 let highScores = document.querySelector("#highscores");
+let highScore=JSON.parse(localStorage.getItem("highScoreBothAdded"));
 
 let playerScore = 0;
 let playerCorrectAnswer = 0;
@@ -12,7 +13,7 @@ let gameTimeLeft = 10;
 let questionsAskedMarker = 0;
 let clickedAnswer;
 let rightAnswer;
-let highScore;
+
 
 function gameTimer() {
   timeRemaining.textContent = gameTimeLeft;
@@ -29,7 +30,11 @@ function gameTimer() {
 }
 
 function gamePlay() {
-  highScore = JSON.parse(localStorage.getItem("highScoreBothAdded"));
+  // highScore = 
+  // if (highScore=""){
+
+
+  // }
   let question = questions[questionsAskedMarker][0];
   questionTitle.innerHTML = question;
   for (let j = 1; j < 5; j++) {
