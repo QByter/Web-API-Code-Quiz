@@ -6,9 +6,19 @@ let timeRemaining = document.querySelector("#time");
 let signUpButton = document.querySelector("#submit");
 let highScores = document.querySelector("#highscores");
 let highScore=JSON.parse(localStorage.getItem("highScoreBothAdded"));
-if (highScore-""){
 
-  localStorage.setItem("highScoreBothAdded", JSON.stringify(highScore));
+if (localStorage.length === 0){
+  console.log("Anything");
+ 
+  highScore=[];
+  
+  // localStorage.setItem("highScoreBothAdded", JSON.stringify(highScore));
+
+}else {
+
+
+
+
 }
 
 let playerScore = 0;
