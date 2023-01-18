@@ -8,7 +8,7 @@ let highScores = document.querySelector("#highscores");
 
 let playerScore = 0;
 let playerCorrectAnswer = 0;
-let gameTimeLeft = 15;
+let gameTimeLeft = 10;
 let questionsAskedMarker = 0;
 let clickedAnswer;
 let rightAnswer;
@@ -70,13 +70,14 @@ function wrongAnswer(params) {
   wrongSound.play();
 }
 
-signUpButton.addEventListener("click", function name(event) {
-  event.preventDefault();
+signUpButton.addEventListener("click", function (event) {
+ 
   highScore.push([userInitialInput.value, playerScore]);
   userInitialInput.value = "";
   localStorage.setItem("highScoreBothAdded", JSON.stringify(highScore));
 
   location.reload();
+  
 });
 
 function answerCheck() {
