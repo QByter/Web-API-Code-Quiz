@@ -6,6 +6,10 @@ let timeRemaining = document.querySelector("#time");
 let signUpButton = document.querySelector("#submit");
 let highScores = document.querySelector("#highscores");
 let highScore=JSON.parse(localStorage.getItem("highScoreBothAdded"));
+if (highScore-""){
+
+  localStorage.setItem("highScoreBothAdded", JSON.stringify(highScore));
+}
 
 let playerScore = 0;
 let playerCorrectAnswer = 0;
